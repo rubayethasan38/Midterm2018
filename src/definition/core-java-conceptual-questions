@@ -159,7 +159,7 @@ Dependencies are the relationships among tasks which determine the order in whic
 what is dependency injection in java?
 Answer: Dependency injection is a concept valid for any programming language. The general concept behind dependency injection is called Inversion of Control.
 What is static binding and dynamic binding?
-Answer: Static Binding: The binding which can be resolved at compile time by compiler is known as static or early binding. Binding of all the static, private and final methods is done at compile-time.
+Answer: Static Binding: The binding which can be resolved at compile time by compiler is known as static or early binding. Binding of all the static, private and final methods is done at compile-time. Static Binding that happens at compile time. Dynamic Binding that happens at runtime.
 
 
 
