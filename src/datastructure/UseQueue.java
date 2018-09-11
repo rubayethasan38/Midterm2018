@@ -14,11 +14,11 @@ public class UseQueue {
          */
         Queue<Integer> newQ = new LinkedList<Integer>();
         // Add elements to Queue.
-        newQ.add(255);
-        newQ.add(127);
-        newQ.add(91);
-        newQ.add(2017);
-        newQ.add(125);
+        newQ.add(101);
+        newQ.add(911);
+        newQ.add(87);
+        newQ.add(2018);
+        newQ.add(111);
         //Applied peek, poll, remove
         System.out.println(newQ.peek());
         System.out.println(newQ.poll());

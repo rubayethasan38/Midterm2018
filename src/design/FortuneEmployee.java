@@ -18,8 +18,8 @@ public class FortuneEmployee {
 	 **/
 	public static void main(String[] args) throws Exception {
 
-		String mission = "We guide you towards your dream";
-		String vision = "Be a great place to work where people are inspired to be the best they can be.";
+		String mission = "To be a nerd for all your needs.";
+		String vision = "To teach others to become successful.";
 
 		EmployeeInfo employee1 = new EmployeeInfo("Mr. Hasan", 101);
 		EmployeeInfo employee2 = new EmployeeInfo("Mr. Dibash", 102);
@@ -33,15 +33,15 @@ public class FortuneEmployee {
 		employee4.assignDepartment("R&D");
 		employee5.assignDepartment("Sales & Marketing");
 
-		employee1.setSalary(9000);
+		employee1.setSalary(5000);
 		employee1.calculateSalary(employee1.getSalary());
-		employee2.setSalary(10000);
+		employee2.setSalary(15000);
 		employee2.calculateSalary(employee2.getSalary());
-		employee3.setSalary(10000);
+		employee3.setSalary(20000);
 		employee3.calculateSalary(employee3.getSalary());
-		employee4.setSalary(8500);
+		employee4.setSalary(25000);
 		employee4.calculateSalary(employee4.getSalary());
-		employee5.setSalary(7500);
+		employee5.setSalary(30000);
 		employee5.calculateSalary(employee5.getSalary());
 
 		employee1.describeCompany();
