@@ -6,7 +6,7 @@ import java.util.List;
 
 public class PrimeNumber {
 
-	public int[] array = new int[315299]; // total # of primes
+	public int[] array = new int[2111987]; // total # of primes
 
 	void sieveOfEratosthenes(int n) throws Exception {
 		// Create a boolean array "prime[0..n]" and initialize
