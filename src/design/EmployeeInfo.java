@@ -1,9 +1,6 @@
 package design;
-
 import java.util.Scanner;
-
 public class EmployeeInfo {
-	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
  * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
@@ -16,7 +13,6 @@ public class EmployeeInfo {
  * Use Exception Handling.
  *
  */
-
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
@@ -26,14 +22,11 @@ public class EmployeeInfo {
 	private String departmentName;
 	private double salary;
 	private int performance;
-
-
 	/*
 	 * You must implement the logic for below 2 methods and
 	 * following 2 methods are prototype as well for other methods need to be design,
 	 * as you will come up with the new ideas.
 	 */
-
 	/*
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
@@ -42,82 +35,62 @@ public class EmployeeInfo {
 		this.employeeId = employeeId;
 
 	}
-
 	public EmployeeInfo(String employeeName, int employeeId) {
 		this.employeeName = employeeName;
 		this.employeeId = employeeId;
 	}
-
 	public void setEmployeeId(int employeeId) {
 		this.employeeId = employeeId;
 	}
-
 	//employeeId() will return employee id.
 	public int employeeId() {
 		return employeeId;
 	}
-
 	public void setEmployeeName(String employeeName) {
 		this.employeeName = employeeName;
 	}
-
 	//employeeName() will return employee name
 	public String employeeName() {
 		return employeeName;
 	}
-
 	public double getSalary() {
 		return salary;
 	}
-
 	public void setSalary(double salary) {
 		this.salary = salary;
-	}
-
 	public int getPerformance() {
 		return performance;
 	}
-
 	public void setPerformance(int performance) {
 		this.performance = performance;
 	}
-
 	//assignDepartment() will assign employee to departments
 	public void assignDepartment(String departmentName) {
 		this.departmentName = departmentName;
 	}
-
 	public String getDepartmentName() {
 		return departmentName;
 	}
-
-
 	public void describeCompany() {
 		companyName = "Selenium Group 2018";
 		System.out.println("In the year 2018 " + " founded the " + companyName + " located at " +   ".");
 	}
-
 	public void describeCompany(String mission) {
 		System.out.println(mission);
 	}
-
 	public void describeCompany(String mission, String vision) {
 		System.out.println(mission);
 		System.out.println(vision);
 	}
-
 	//calculate employee salary
 	public double calculateSalary(double salary) {
 		double yearlySalary = salary * 12;
 		return yearlySalary;
 	}
-
 	//employee benefit
 	public void benefitLayout() {
 		System.out.println("You have Ten Paid sick leave.");
-
 	}
-
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
@@ -127,7 +100,6 @@ public class EmployeeInfo {
 	 * 10% Rating 5, 8% Rating 4, 6% Rating 3, 0% Rating 2, 0% Rating 1(give warning)
 	 */
 	public static double calculateEmployeeBonus(double salary, int performance) {
-
 		double yearlyBonus = 0;
 		if (performance == 5) {
 			yearlyBonus = salary * 0.1 * 12;
@@ -144,7 +116,6 @@ public class EmployeeInfo {
 		}
 		return yearlyBonus;
 	}
-
 	/*
 	 * This methods should calculate Employee Pension based on salary and numbers of years with the company.
 	 * Then it will return the total pension. So you need to implement the logic.
@@ -162,13 +133,10 @@ public class EmployeeInfo {
 		String convertedTodaysDate = DateConversion.convertDate(todaysDate); // 12/2017
 		String startYear = convertedJoiningDate.substring(convertedJoiningDate.length() - 4, convertedJoiningDate.length());
 		String currentYear = convertedTodaysDate.substring(convertedTodaysDate.length() - 4, convertedTodaysDate.length());
-
 		int start = Integer.parseInt(startYear);
 		int current = Integer.parseInt(currentYear);
-
 		//Calculate pension
 		int numberOfYears = current - start;
-
 		if (numberOfYears >= 5) {
 			total = salary * .25;
 		} else if (numberOfYears == 4) {
@@ -183,18 +151,11 @@ public class EmployeeInfo {
 			total = 0;
 		}
 		System.out.println("Total pension: $" + total);
-
-
 		return total;
 	}
-
-
 	private static class DateConversion {
-
 		public DateConversion(Months months) {
-
 		}
-
 		public static String convertDate(String date) {
 			String[] extractMonth = date.split(",");
 			String givenMonth = extractMonth[0];
@@ -202,7 +163,6 @@ public class EmployeeInfo {
 			String actualDate = monthDate + "/" + extractMonth[1]; // 9/2018
 			return actualDate;
 		}
-
 		public static int whichMonth(String givenMonth) {
 			Months months = Months.valueOf(givenMonth);
 			int date = 0;
@@ -248,7 +208,6 @@ public class EmployeeInfo {
 					break;
 			}
 			return date;
-
 		}
 	}
 }

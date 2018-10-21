@@ -1,13 +1,9 @@
 package math.problems;
-
 import databases.ConnectToSqlDB;
 import java.util.ArrayList;
 import java.util.List;
-
 public class PrimeNumber {
-
 	public int[] array = new int[228715]; // total # of primes
-
 	void sieveOfEratosthenes(int n) throws Exception {
 		// Create a boolean array "prime[0..n]" and initialize
 		// all entries it as true. A value in prime[i] will
@@ -40,7 +36,6 @@ public class PrimeNumber {
 		final long endTime = System.currentTimeMillis();
 		final long executionTime = endTime - startTime;
 		System.out.println("\nTime it takes to calculate prime number from 1,000,000 numbers: "+executionTime+" milliseconds");
-
 		ConnectToSqlDB.insertDataFromArrayToSqlTable(array, "tbl_Prime_Number", "column_Prime_Number");
 		storePattern = ConnectToSqlDB.readDataBase("tbl_Prime_Number", "column_Prime_Number");
 		System.out.println("Data is being read from the Table (tablePrimeNumber) and displaying to the console");
@@ -48,7 +43,6 @@ public class PrimeNumber {
 			System.out.print(st + " ");
 		}
 	}
-
 	public static void main(String[] args) throws Exception {
 		/*
 		 * Find list of Prime numbers from number 2 to 1 million.
@@ -60,10 +54,8 @@ public class PrimeNumber {
 		 *
 		 */
 		int n = 1000000;
-
 		System.out.print("Following are the prime numbers ");
 		System.out.println("smaller than or equal to " + n);
-
 		PrimeNumber g = new PrimeNumber();
 		g.sieveOfEratosthenes(n);
 	}

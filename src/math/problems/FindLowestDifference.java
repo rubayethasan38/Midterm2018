@@ -1,7 +1,5 @@
 package math.problems;
-
 import static java.lang.Math.abs;
-
 public class FindLowestDifference {
     public static void main(String[] args) {
         /*
@@ -12,7 +10,6 @@ public class FindLowestDifference {
         int [] array2 = {3,23,24,8,45,95,13,21};
         int low = -1;
         int diff;
-
         for(int i : array1)
         {
             for(int j : array2)

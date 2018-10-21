@@ -1,7 +1,5 @@
 package math.problems;
-
 public class Fibonacci {
-
     static boolean fibbonacci(int n)
     {
         int num1=0, num2=1, total=0;

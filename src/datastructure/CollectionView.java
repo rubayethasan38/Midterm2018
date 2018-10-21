@@ -1,10 +1,7 @@
 package datastructure;
-
 import java.util.Collection;
 import java.util.HashMap;
-
 public class CollectionView {
-
         public static void main(String[] args) {
         /*
          Map is created and inserted some data.Retrieve the Collection view of values present in map
@@ -24,7 +21,5 @@ public class CollectionView {
                         String value = (String) checkMap.get(key);
                         System.out.println(key+" "+value);
                 }
-
         }
-
 }

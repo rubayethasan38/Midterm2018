@@ -1,9 +1,7 @@
 package datastructure;
-
 import databases.ConnectToSqlDB;
 import java.util.*;
 public class UseMap {
-
     public static void main(String[] args) throws Exception {
         /*
          * Demonstrate how to use Map that includes storing and retrieving elements.
@@ -12,23 +10,19 @@ public class UseMap {
          *
          * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
          */
-
         /* declare HashMap */
         HashMap<Integer, String> hmap = new HashMap<Integer, String>();
-
         /*Adding elements to HashMap*/
         hmap.put(12, "Samiur");
         hmap.put(2, "Sarah");
         hmap.put(7, "Afrin");
         hmap.put(49, "Tahiti");
         hmap.put(3, "Jamil");
-
         /* Retrieve values */
         String var = hmap.get(2);
         System.out.println("Value at index 2 is: " + var);
         String var1 = hmap.get(3);
         System.out.println("Value at index 3 is: " + var1);
-
         // Add List<String> into a Map.
         Map<String, List<String>> list = new HashMap<String, List<String>>();
         List<String> carList = new ArrayList<String>();
@@ -37,14 +31,12 @@ public class UseMap {
         carList.add("Tesla");
         list.put("car", carList);
         System.out.println(list);
-
         List<String> fruits = new ArrayList<String>();
         fruits.add("Grapefruit");
         fruits.add("Mango");
         fruits.add("Orange");
         list.put("fruit", fruits);
         System.out.println(list);
-
         // Each loop to retrieve data
         for (Object str : list.keySet()) {
             System.out.println("KeySet:" + str);
@@ -64,7 +56,6 @@ public class UseMap {
         }
         //Connect to MySql Database
         ConnectDB connectDB = new ConnectDB();
-
         //Create table in the database
         connectDB.createTableFromStringToMySql("use_map", "mapKey", "mapValue");
         for (Object str : list.keySet()) {

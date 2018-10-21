@@ -1,11 +1,8 @@
 package math.problems;
-
 import java.util.ArrayList;
 import java.util.List;
-
 public class Pattern
 {
-
 	public static void main(String[] args)
 	{
 		/* Read this numbers, find the pattern then implement the logic from this pattern.which will give you this output.
@@ -13,7 +10,6 @@ public class Pattern
 		 *
 		 *
 		 */
-
 		for(int i = 100; i >=0;)
 		{
 			if(i>90)

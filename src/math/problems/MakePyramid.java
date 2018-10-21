@@ -1,5 +1,4 @@
 package math.problems;
-
 public class MakePyramid
 {
     public static void printTriangle ( int n)
@@ -19,11 +18,9 @@ public class MakePyramid
             }
             System.out.println();
         }
-
     }
     public static void main(String[] args)
     {
-
         /*   Implement a large Pyramid of stars in the screen with java.
          *
          * *
@@ -34,6 +31,5 @@ public class MakePyramid
          */
         int n = 4;
         printTriangle(n);
-
     }
 }

@@ -1,10 +1,8 @@
 package math.problems;
-
 /**
  * Created by mrahman on 04/22/17.
  */
 public class FindMissingNumber {
-
     public static void main(String[] args) {
         /*
          * If n = 10, then array will have 9 elements in the range from 1 to 10.
@@ -20,7 +18,6 @@ public class FindMissingNumber {
         }
         System.out.println(nSum - findMissingNumber(array));
     }
-
     static int findMissingNumber(int [] arr)
     {
         int arrSum = 0;

@@ -1,5 +1,4 @@
 package math.problems;
-
 public class UnitTestingMath {
     public static void main(String[] args) {
         //Apply Unit testing into each classes and methods in this package.
@@ -10,6 +9,5 @@ public class UnitTestingMath {
         Assert.assertEquals(9,FindMissingNumber.findMissingNumber(array));
         array = new int[]{23, 65, 88, 12, 6, 90, 22, 12};
         Assert.assertEquals(6,LowestNumber.findLowest(array));
-
     }
 }

@@ -1,7 +1,5 @@
 package datastructure;
-
 public class DataReader {
-
     public static void main(String[] args) {
         /*
          * User API to read the below textFile and print to console.
@@ -17,11 +15,6 @@ public class DataReader {
          * Demonstrate how to use Stack that includes push,peek,search,pop elements.
          * Use For Each loop/while loop/Iterator to retrieve data.
          */
-
         String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
-
-
-
     }
-
 }

@@ -1,9 +1,7 @@
 package string.problems;
-
 import java.util.Arrays;
 public class Anagram
 {
-
     public static boolean checkAnagram(String str1, String str2)
     {
         if (str1.length() != str2.length())
@@ -14,12 +12,10 @@ public class Anagram
         {
             return false; // if cat = cat then false, same char same order
         }
-
         char[] chr1 = str1.toLowerCase().toCharArray();
         char[] chr2 = str2.toLowerCase().toCharArray();
         Arrays.sort(chr1);
         Arrays.sort(chr2);
-
         for (int i = 0; i < chr1.length; i++)
         {
             if(chr1[i] != chr2[i])
@@ -29,7 +25,6 @@ public class Anagram
         }
         return true;
     }
-
     public static void main(String[] args)
     {
         //Write a Java Program to check if the two String are Anagram. Two String are called Anagram when there is

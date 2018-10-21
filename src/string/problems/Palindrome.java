@@ -1,5 +1,4 @@
 package string.problems;
-
 public class Palindrome {
     public static void main(String[] args) {
         /*
@@ -13,7 +12,6 @@ public class Palindrome {
         {
             str2 += str.charAt(i);
         }
-
         if(str.equals(str2))
         {
             System.out.println(str + " is a palindrome!");
