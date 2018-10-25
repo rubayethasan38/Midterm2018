@@ -1,15 +1,10 @@
 package math.problems;
-public class MakePyramid
-{
-    public static void printTriangle ( int n)
-    {
+public class MakePyramid {
+    public static void printTriangle ( int n) {
         int k = 4 * n -4;
-        for (int i=0; i<n; i++)
-        {
-            for (int j = 0; j<k; j++)
-            {
+        for (int i=0; i<n; i++) {
+            for (int j = 0; j<k; j++) {
                 System.out.print(" ");
-
             }
             k = k-1;
             for (int j = 0; j <= i; j++)

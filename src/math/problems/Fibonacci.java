@@ -1,21 +1,18 @@
 package math.problems;
 public class Fibonacci {
-    static boolean fibbonacci(int n)
-    {
-        int num1=0, num2=1, total=0;
-        for (int i = 0; i < n; i++)
-        {
-            total=num1+num2;
-            System.out.println(total);
-            num1=num2;
-            num2=total;
-        }
-        return true;
-    }
     public static void main(String[] args) {
          /*
           Write 40 Fibonacci numbers with java.
          */
-        fibbonacci(40);
+        int a = 0;
+        int b = 1;
+        int c =a+b ;
+        System.out.println("fibonacci numbers till 40 are : ");
+        for (int i = 0; i <= 40; i++) {
+            System.out.print( a +" ");
+            a = b;
+            b = c;
+            c = a + b;
+        }
     }
 }

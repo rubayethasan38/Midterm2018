@@ -1,9 +1,6 @@
 package algorithm;
-
 import org.testng.Assert;
-
 public class UnitTestSorting {
-
     /*
       This class is about Unit testing for Sorting Algorithm.
      */
@@ -28,7 +25,6 @@ public class UnitTestSorting {
         }catch(Exception ex){
             ex.getMessage();
         }
-
         //insertion sort
         unSortedArray = new int[]{6,9,2,5,1,0,4};
         sort.insertionSort(unSortedArray);
@@ -37,7 +33,6 @@ public class UnitTestSorting {
         }catch(Exception ex){
             ex.getMessage();
         }
-
         //merge sort
         unSortedArray = new int[]{6,9,2,5,1,0,4};
         sort.mergeSort(unSortedArray,0,unSortedArray.length-1);
@@ -46,7 +41,6 @@ public class UnitTestSorting {
         }catch(Exception ex){
             ex.getMessage();
         }
-
         //quick sort
         unSortedArray = new int[]{6,9,2,5,1,0,4};
         sort.quickSort(unSortedArray,0,unSortedArray.length-1);
@@ -55,7 +49,6 @@ public class UnitTestSorting {
         }catch(Exception ex){
             ex.getMessage();
         }
-
         //heap sort
         unSortedArray = new int[]{6,9,2,5,1,0,4};
         sort.heapSort(unSortedArray,unSortedArray.length);
@@ -64,7 +57,6 @@ public class UnitTestSorting {
         }catch(Exception ex){
             ex.getMessage();
         }
-
         //bucket sort
         unSortedArray = new int[]{6,9,2,5,1,0,4};
         sort.bucketSort(unSortedArray,9);
@@ -73,7 +65,5 @@ public class UnitTestSorting {
         }catch(Exception ex){
             ex.getMessage();
         }
-
-
     }
 }

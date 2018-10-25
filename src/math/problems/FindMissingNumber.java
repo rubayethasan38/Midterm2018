@@ -18,7 +18,7 @@ public class FindMissingNumber {
         }
         System.out.println(nSum - findMissingNumber(array));
     }
-    static int findMissingNumber(int [] arr)
+    public static int findMissingNumber(int [] arr)
     {
         int arrSum = 0;
         for(int i : arr)
