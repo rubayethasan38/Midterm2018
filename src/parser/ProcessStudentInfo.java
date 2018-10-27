@@ -1,5 +1,4 @@
 package parser;
-
 import databases.ConnectToMongoDB;
 import databases.ConnectToSqlDB;
 import org.xml.sax.SAXException;
@@ -10,9 +9,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
 public class ProcessStudentInfo {
-
 		/*
 		 * Under XmlReader class, the parseData() will return list of Student Info which will contain Student first name, last name and score.
 		 * You need to implement the method name "convertIntToChar()" which will convert String score into char Grade.('A'for 90 to 100,'B'for 80 to 89 and 
@@ -34,7 +31,6 @@ public class ProcessStudentInfo {
 		 * Use any databases[MongoDB, Oracle or MySql] to store data and to retrieve data.
 		 *
 		 */
-
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 		//Path of XML data to be read.
 		String pathSelenium  = System.getProperty("user.dir") +"/src/parser/selenium.xml";
@@ -79,8 +75,6 @@ public class ProcessStudentInfo {
 
 			}
 		}
-
-
 				/*//Store Qtp data into Qtp table in Database
 				connectToMongoDB.insertIntoMongoDB(seleniumStudents,"qtp");
 				//connectToSqlDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
@@ -92,8 +86,5 @@ public class ProcessStudentInfo {
 			   }
 */
 		//Retrieve Selenium students from Database
-
-
 	}
-
 }

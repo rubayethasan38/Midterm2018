@@ -1,6 +1,5 @@
 package math.problems;
 import databases.ConnectToSqlDB;
-
 import java.util.ArrayList;
 import java.util.List;
 public class LowestNumber {

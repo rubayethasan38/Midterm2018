@@ -48,7 +48,6 @@ public class XmlReader {
 			}
 			list.add(student);
 		}
-		
 	 }
 	return list;		
   }
